@@ -1,6 +1,6 @@
 # Async Handler
 
-This Package is for handled async response Api.
+This Package is to handle the async API response.
 
 ## Installation
 
@@ -10,15 +10,13 @@ Use the package manager [npm](https://www.npmjs.com/) to install async-handler-e
 npm install async-handler-express
 ```
 
-## Add Middlewares in root file
+## Add Middleware in root file
 
 ```python
-const { errorConverter, errorHandler }=require('async-handler-express');
+const { errorHandler }=require('async-handler-express');
 
-#use this middlewares end of routes
-app.use(errorConverter);
+#use this middleware after including routes in the app root/server file.
 app.use(errorHandler);
-
 
 ```
 
@@ -28,9 +26,21 @@ app.use(errorHandler);
 const { catchAsync }=require('async-handler-express');
 
 app.get('/',catchAsync(async()=>{
-     await Promise().....
+     await Promise.resolve();
 }));
 
+```
+
+### Example
+
+```python
+#Fetch users data from jsonplaceholder fake apis 
+const { catchAsync }=require('async-handler-express');
+
+router.get('/users',catchAsync(async()=>{
+     const users = await fetch("https://jsonplaceholder.typicode.com/users");
+     return users;
+}));
 
 ```
 
