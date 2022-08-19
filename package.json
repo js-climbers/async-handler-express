@@ -31,7 +31,23 @@
     "trailingComma": "es5"
   },
   "name": "async-handler-express",
-  "author": "Usman",
+  "author": [
+    "Rana Usman",
+    "Roman Azeem",
+    "Usma Haider",
+    "Maroof Akram",
+    "Haziq"
+  ],
+  "keywords": [
+    "promise",
+    "async",
+    "async-handler",
+    "async-handler-express",
+    "async handler",
+    "try-catch",
+    "exception-handling",
+    "express"
+  ],
   "module": "dist/async-handler.esm.js",
   "size-limit": [
     {
