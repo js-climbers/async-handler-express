@@ -3,7 +3,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "repository": "https://github.com/RanaUsman3131/async-handler.git",
+  "repository": "https://github.com/js-climbers/async-handler-express.git",
   "files": [
     "dist"
   ],
